@@ -46,7 +46,7 @@ for i in range(0, len(paginas)):
         for navItem in paginas[i]["nav"]:
             nav.append(navItem)
             newPage = navItem.replace(" ", "_")
-            link = rootPad + "_site/" + newPage + ".html"
+            link = rootPad + newPage + ".html"
             links.append(link)
 
 # het aanmaken van alle blogposts gebeurt hieronder
@@ -54,7 +54,7 @@ for i in range(0, len(paginas)):
 for i in range(0, len(blogs)):
     blognaam = blogs[i]["blog"].replace(" ", "_")
     bestandsnaam = "./_site/" + blognaam + ".html"
-    bloglink = rootPad + "_site/" + blognaam + ".html"
+    bloglink = rootPad + blognaam + ".html"
     blog_links.append(bloglink)
 
     #tags selecteren
