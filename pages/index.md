@@ -1,7 +1,7 @@
 ---
 pagina: index
 nav:
-    - index
+    - homepage
     - blogs
     - about me
     - contact
