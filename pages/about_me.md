@@ -1,5 +1,5 @@
 ---
-pagina: about_me
+pagina: about me
 nav:
     - homepage
     - blogs

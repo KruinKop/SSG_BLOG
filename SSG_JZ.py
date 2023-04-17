@@ -41,11 +41,16 @@ for bestand in alleBestanden:
 
 rootPad = "https://kruinkop.github.io/SSG_Blog/"
 
-for pagina in paginas:
-    nav.append(pagina["pagina"])
-    newPage = pagina["pagina"].replace(" ", "_")
-    link = rootPad + newPage + ".html"
-    links.append(link)
+for i in range(0, len(paginas)):
+    if paginas[i]["pagina"] == "index":
+        for navItem in paginas[i]["nav"]:
+            nav.append(navItem)
+            newPage = navItem.replace(" ", "_")
+            if newPage == "homepage":
+                newPage = "index"
+            link = rootPad + newPage + ".html"
+            links.append(link)
+print(paginas)
 
 # het aanmaken van alle blogposts gebeurt hieronder
 
