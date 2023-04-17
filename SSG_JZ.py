@@ -39,22 +39,22 @@ for bestand in alleBestanden:
     with open(bestand, "r") as f:
         blog_preview.append(p.parseBody(f, "preview"))
 
-rootPad = "https://kruinkop.github.io/"
+rootPad = "https://kruinkop.github.io/SSG_BLOG/"
 
 for i in range(0, len(paginas)):
     if paginas[i]["pagina"] == "index":
         for navItem in paginas[i]["nav"]:
             nav.append(navItem)
             newPage = navItem.replace(" ", "_")
-            link = rootPad + "SSG_BLOG/" + newPage + ".html"
+            link = rootPad + "_site/" + newPage + ".html"
             links.append(link)
 
 # het aanmaken van alle blogposts gebeurt hieronder
 
 for i in range(0, len(blogs)):
     blognaam = blogs[i]["blog"].replace(" ", "_")
-    bestandsnaam = "./SSG_BLOG/" + blognaam + ".html"
-    bloglink = rootPad + "SSG_BLOG/" + blognaam + ".html"
+    bestandsnaam = "./_site/" + blognaam + ".html"
+    bloglink = rootPad + "_site/" + blognaam + ".html"
     blog_links.append(bloglink)
 
     #tags selecteren
@@ -76,7 +76,7 @@ for i in range(0, len(blogs)):
 
 for i in range(0, len(paginas)):
     paginanaam = paginas[i]["pagina"].replace(" ", "_")
-    bestandsnaam = "./SSG_BLOG/" + paginanaam + ".html"
+    bestandsnaam = "./_site/" + paginanaam + ".html"
 
     context = {
         "links": links,
