@@ -1,10 +1,5 @@
 ---
 pagina: about me
-nav:
-    - homepage
-    - blogs
-    - about me
-    - contact
 post: n/a
 auteur: jesse
 ---
