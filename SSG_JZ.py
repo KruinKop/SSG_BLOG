@@ -39,7 +39,7 @@ for bestand in alleBestanden:
     with open(bestand, "r") as f:
         blog_preview.append(p.parseBody(f, "preview"))
 
-rootPad = "https://kruinkop.github.io/"
+rootPad = "https://kruinkop.github.io/SSG_BLOG/"
 
 for i in range(0, len(paginas)):
     if paginas[i]["pagina"] == "index":
