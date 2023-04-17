@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ filename }}</title>
+</head>
+<body>
+  <header>
+    <nav>
+      {% for navItems in navigatie %}
+      <a href="{{ links[loop.index0] }}">
+        {{ navItems }}
+      </a>
+      {% endfor %}
+    </nav>
+  </header>
+    {% if filename == "blogs" %}
+    {% for blog in blogs %}
+    <article>
+      {{ blog }}
+      <a href="{{ blog_links[loop.index0] }}"> read more </a>
+    </article>
+    {% endfor %}
+    {% elif filename == "tags" %}
+      {% for k, v in hashtags.items() %}
+        <h2> {{ k }}</h2>
+          {% for value in v %}
+            <li> <a href="{{ value[1]}}"> {{ value[0] }}</a> </li>
+          {% endfor %}
+      {% endfor %}
+    {% else %}
+    <div>{{ post }}</div>  
+    {% endif %}
+</body>

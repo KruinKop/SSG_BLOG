@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ filename }}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            {% for navItems in navigatie %}
+            <a href="{{ links[loop.index0] }}">
+              {{ navItems }}
+            </a>
+            {% endfor %}
+          </nav>
+    </header>
+    <div>{{ post }}</div>
+</body>
