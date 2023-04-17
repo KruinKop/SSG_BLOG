@@ -46,7 +46,10 @@ for i in range(0, len(paginas)):
         for navItem in paginas[i]["nav"]:
             nav.append(navItem)
             newPage = navItem.replace(" ", "_")
-            link = rootPad + newPage + ".html"
+            if newPage == "index":
+                link = rootPad + "homepage" + ".html"
+            else:
+                link = rootPad + newPage + ".html"
             links.append(link)
 
 # het aanmaken van alle blogposts gebeurt hieronder
