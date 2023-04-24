@@ -50,7 +50,6 @@ for i in range(0, len(paginas)):
                 newPage = "index"
             link = rootPad + newPage + ".html"
             links.append(link)
-print(paginas)
 
 # het aanmaken van alle blogposts gebeurt hieronder
 

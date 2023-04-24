@@ -1,5 +1,6 @@
 ---
 pagina: about me
+nav: n/a
 post: n/a
 auteur: jesse
 ---
@@ -11,5 +12,5 @@ hallo, mijn naam is Jesse, 29 jaar en trotse student aan de AP hogeschool in Ant
 ## hobby's
 mijn hobby's zijn het proberen niet vermoorden van kamerplanten en plaatjes draaien. Ook ben ik geïnteresseerd in vintage elektronica en alles technologie
 
-## mijn liefie
-mijn liefie heet Babette, ze is 27 jaar oud en Nederlands
+## Babette
+mijn vriending heet Babette, ze is 27 jaar oud en Nederlands
